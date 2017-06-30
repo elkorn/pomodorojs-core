@@ -1,0 +1,46 @@
+{
+  "name": "pomodorojs-core",
+  "version": "0.5.1-pre",
+  "description": "The core mechanism for PomodoroJS",
+  "main": "index.js",
+  "author": "elkorn",
+  "license": "MIT",
+  "dependencies": {
+    "minimist": "^0.1.0",
+    "mirrorkey": "^1.2.0",
+    "ramda": "^0.15.0",
+    "state-machine": "0.0.3",
+    "timespan": "^2.3.0",
+    "zpad": "^0.5.0"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "devDependencies": {
+    "babel": "^5.5.8",
+    "coveralls": "^2.13.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.1",
+    "eslint-plugin-react": "^7.0.1",
+    "mocha": "^2.2.5",
+    "npm-bump": "0.0.13",
+    "nyc": "^11.0.3",
+    "run-sequence": "^1.1.0",
+    "should": "^3.3.2",
+    "sinon": "^1.15.3"
+  },
+  "scripts": {
+    "bump": "npm-bump",
+    "cover": "nyc --reporter=text yarn test",
+    "test": "mocha --compilers js:babel/register",
+    "lint": "eslint src",
+    "lint:fix": "yarn lint -- --fix",
+    "watch:lint": "esw src --watch --clear",
+    "watch:lint:fix": "yarn watch:lint -- --fix",
+    "watch:test": "yarn test -- --watch",
+    "ci:cover": "nyc report --reporter=text-lcov | coveralls",
+    "ci:lint": "yarn lint"
+  }
+}

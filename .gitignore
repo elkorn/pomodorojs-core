@@ -1,0 +1,11 @@
+node_modules
+*.swp
+statsfile
+statefile
+.tempfile
+.tern-port
+*.bak
+TODOs.org
+.nyc_output
+coverage
+npm-debug.log
