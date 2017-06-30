@@ -4,7 +4,7 @@ const PomodoroJS = require('./src/main');
 const EVENTS = require('./src/core/events');
 
 module.exports = {
-  Events,
+  EVENTS,
   Plugin,
   UI,
   PomodoroJS,

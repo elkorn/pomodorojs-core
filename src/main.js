@@ -7,6 +7,7 @@ function bootstrap({ plugins, ui }) {
   const basePlugins = [
     new StatePlugin(),
     new StatsPlugin({ ui }),
+    ui,
   ];
 
   const pomodorojs = new PomodoroJS({
